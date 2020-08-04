@@ -12,6 +12,11 @@ export const usePage = () => {
   return state.page;
 };
 
+export const useTheme = () => {
+  const { state } = useContext(AppContext);
+  return state.theme;
+};
+
 export const useDispatch = () => {
   const { dispatch } = useContext(AppContext);
   return dispatch;
