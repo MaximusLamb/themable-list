@@ -1,6 +1,6 @@
 
-export const fetchCharacter = () => {
-  return fetch('https://rickandmortyapi.com/api/character/')
+export const fetchCharacter = (page = 1) => {
+  return fetch(`https://rickandmortyapi.com/api/character/?page=${page}`)
     .then(res => res.json())
     .then(({ results }) => 
       results.map(result => ({

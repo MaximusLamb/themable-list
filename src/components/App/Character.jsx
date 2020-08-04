@@ -6,7 +6,7 @@ const Character = () => {
   const characters = useCharacter();
 
   const characterElements = characters.map(character => (
-    <li key={character.name}>
+    <li key={character.id}>
       <p>{character.name}-{character.gender}</p>
       <img src={character.image} alt={character.name} />
     </li>
